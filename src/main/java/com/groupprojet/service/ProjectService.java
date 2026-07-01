@@ -141,10 +141,7 @@ public class ProjectService {
     }
 
     public List<ProjectDTO> getProjectsByUser(Long userId) {
-        // Return projects created by this user
-        // OR projects where the user is a member, depending on the data model.
-        // For now, let's use created_by as the basic link.
-        return projectRepository.findByCreatedByIdUser(userId)
+        return projectRepository.findProjectsForUser(userId)
                 .stream()
                 .map(this::mapToDTO)
                 .collect(Collectors.toList());
