@@ -1,4 +1,4 @@
--- Optional
+-- Optional (Trigger Flyway Clean 2)
 CREATE EXTENSION IF NOT EXISTS pgcrypto;
 
 -- ENUM alternatives via CHECK constraints

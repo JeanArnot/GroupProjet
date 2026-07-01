@@ -16,6 +16,8 @@ spring:
   flyway:
     enabled: true
     baseline-on-migrate: true
+    clean-disabled: false
+    clean-on-validation-error: true
     locations: classpath:db/migration
 
 jwt:
