@@ -7,7 +7,7 @@ import java.time.LocalDate;
 @Data
 public class ProjectDTO {
     private Long idProject;
-    private Long OrganizationId;
+    private Long organizationId;
     private String projectName;
     private String description;
     private String projectCode;
