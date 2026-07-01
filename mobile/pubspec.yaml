@@ -1,0 +1,42 @@
+name: mobile
+description: A new Flutter project for GroupProjet.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  provider: ^6.1.5+1
+  dio: ^5.3.3
+  shared_preferences: ^2.2.1
+  go_router: ^12.1.1
+  flutter_svg: ^2.0.7
+  google_fonts: ^6.1.0
+  intl: ^0.20.2
+  flutter_secure_storage: ^10.1.0
+  url_launcher: ^6.3.2
+  file_picker: ^10.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+flutter_launcher_icons:  
+  android: "launcher_icon"  
+  ios: true  
+  image_path: "assets/images/logo.png"  
+  min_sdk_android: 21 
